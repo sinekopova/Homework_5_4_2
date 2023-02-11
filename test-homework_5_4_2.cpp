@@ -29,7 +29,7 @@ TEST_CASE("test List", "[list]") {
 			INFO("Некорректно записан/извлечен последний элемент");
 			CHECK(list1.PopBack() == back);
 		}
-		//list1.PopBack();
+		list1.PopBack();
 		{
 			INFO("Ошибка обработки извлечения первого элемента из пустого списка");
 			CHECK_THROWS(list1.PopFront());
